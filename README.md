@@ -48,4 +48,16 @@ Berikut ini merupakan hasil dari training model VGG-19 (5 epoch) dengan mengguna
 
 Berikut adalah grafik plot dari hasil training loss dan val loss :
 
-<img src="gambar/Capture5.jpg"/>
+<img src="gambar/Capture5.JPG"/>
+
+Ringkasan hasil training yang dihasilkan adalah sebagai berikut:
+* Loss (Kehilangan) pada data pelatihan: 0.074
+* Akurasi pada data pelatihan: 0.98 atau 98%
+* Loss (Kehilangan) pada data validasi: 0.063
+* Akurasi pada data validasi: 0.98 atau 98%
+
+Hasil ini menunjukkan bahwa model yang telah dilatih memiliki kinerja yang sangat baik:
+* Loss yang rendah pada data pelatihan (0.074) menunjukkan bahwa model hampir tidak memiliki kesalahan yang signifikan dalam mempelajari data pelatihan.
+* Akurasi tinggi pada data pelatihan (0.98 atau 98%) menunjukkan bahwa model dapat dengan tepat mengklasifikasikan sebagian besar sampel pada data pelatihan.
+* Loss yang rendah pada data validasi (0.063) menunjukkan bahwa model tidak mengalami overfitting yang signifikan dan dapat memgeneralisasi dengan baik pada data baru yang belum pernah dilihat.
+* Akurasi tinggi pada data validasi (0.98 atau 98%) menunjukkan bahwa model juga dapat melakukan klasifikasi dengan sangat baik pada data yang tidak digunakan selama proses pelatihan.
