@@ -41,14 +41,11 @@ Dalam project ini model yang digunakan VGG-19, berdasarkan beberapa faktor diata
 
 <img src="gambar/download (2).png"/>
 
-## Fitur
+**Training :**
+Berikut ini merupakan hasil dari training model VGG-19 (5 epoch) dengan menggunakan dataset yang ada :
 
-- [x] Rekomendasi Kesehatan
-- [x] Info dan Berita Kesehatan
-- [x] Cek Kesehatan Mulut (gigi & lidah) 
+<img src="gambar/Capture4.png"/>
 
-## Kebutuhan
-* Android Studio Flamingo 2022.2.1 Patch 2
-* Emulator / External Device
-* Google Colab
-* Jupyter Notebook
+Berikut adalah grafik plot dari hasil training loss dan val loss :
+
+<img src="gambar/Capture5.png"/>
