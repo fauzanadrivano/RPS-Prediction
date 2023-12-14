@@ -85,12 +85,15 @@ Clone repository berikut :
 **Tampilan Aplikasi Web**
 
 Tampilan awal
+
 <img src="gambar/Capture.JPG"/>
 
 Upload gambar yang ingin diprediksi
+
 <img src="gambar/Capture2.JPG"/>
 
 Hasil prediksi
+
 <img src="gambar/Capture3.JPG"/>
 
 ## Kesimpulan
