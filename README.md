@@ -18,8 +18,15 @@ Proyek ini bertujuan untuk melakukan klasifikasi gambar rock, paper, dan scissor
 - [x] Tensorflow
 
 ## Dataset
-Dataset yang digunakan merupakan kumpulan citra tangan paper, rock, dan scissors
+Dataset yang digunakan merupakan kumpulan citra tangan paper, rock, dan scissors yang berjumlah 2520 gambar.
+berikut merupakan contoh gambar dari masing masing kelas yang ada :
+
 <img src="gambar/download.png"/>
+
+Dataset yang ada dibagi menjadi 3 bagian menjadi data train, validation, dan test, dengan proporsi 75%:15%:10%.
+Setelah itu data dilakukan beberapa augmentasi yang disesuaikan untuk menambah variasi data yang dimiliki, berikut hasil setelah dilakukan augmentasi :
+
+<img src="gambar/download (1).png"/>
 
 ## Development Roadmap
 
