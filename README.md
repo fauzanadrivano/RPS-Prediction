@@ -44,8 +44,8 @@ Dalam project ini model yang digunakan VGG-19, berdasarkan beberapa faktor diata
 **Training :**
 Berikut ini merupakan hasil dari training model VGG-19 (5 epoch) dengan menggunakan dataset yang ada :
 
-<img src="gambar/Capture4.png"/>
+<img src="gambar/Capture4.jpg"/>
 
 Berikut adalah grafik plot dari hasil training loss dan val loss :
 
-<img src="gambar/Capture5.png"/>
+<img src="gambar/Capture5.jpg"/>
