@@ -17,9 +17,16 @@ Proyek ini bertujuan untuk melakukan klasifikasi gambar rock, paper, dan scissor
 - [x] Flask
 - [x] Tensorflow
 
+**Struktur Project :**
+* /models: Direktori untuk menyimpan model VGG19 dan berkas terkait lainnya.
+* /static: Direktori untuk menyimpan file statis seperti gambar, CSS, dan JavaScript.
+* /templates: Direktori untuk menyimpan template HTML untuk antarmuka web Flask.
+* app.py: Berkas utama yang berisi logika Flask dan rute aplikasi.
+
+
 ## Dataset
 Dataset yang digunakan merupakan kumpulan citra tangan paper, rock, dan scissors yang berjumlah 2520 gambar.
-berikut merupakan contoh gambar dari masing masing kelas yang ada :
+Berikut merupakan contoh gambar dari masing masing kelas yang ada :
 
 <img src="gambar/download.png"/>
 
@@ -61,3 +68,40 @@ Hasil ini menunjukkan bahwa model yang telah dilatih memiliki kinerja yang sanga
 * Akurasi tinggi pada data pelatihan (0.98 atau 98%) menunjukkan bahwa model dapat dengan tepat mengklasifikasikan sebagian besar sampel pada data pelatihan.
 * Loss yang rendah pada data validasi (0.063) menunjukkan bahwa model tidak mengalami overfitting yang signifikan dan dapat memgeneralisasi dengan baik pada data baru yang belum pernah dilihat.
 * Akurasi tinggi pada data validasi (0.98 atau 98%) menunjukkan bahwa model juga dapat melakukan klasifikasi dengan sangat baik pada data yang tidak digunakan selama proses pelatihan.
+
+## Aplikasi Website
+Setelah hasil train dirasa cukup baik, model di simpan dalam format .h5. Setelah itu deployment model dengan aplikasi web menggunakan Flask Python.
+
+**Tata Cara Menggunakan**
+Clone repository berikut :
+- git clone https://github.com/fauzanadrivano/RPS-Prediction/tree/main
+
+1. Pastikan Python telah diinstal di lingkungan Anda.
+2. Instal semua dependensi yang diperlukan dengan menjalankan pip install -r requirements.txt.
+3. Jalankan aplikasi Flask dengan perintah python app.py.
+4. Buka browser dan akses http://localhost:5000.
+5. Unggah gambar rock, paper, atau scissors dan lihat hasil prediksi dari model VGG19.
+
+**Tampilan Aplikasi Web**
+
+Tampilan awal
+<img src="gambar/Capture.JPG"/>
+
+Upload gambar yang ingin diprediksi
+<img src="gambar/Capture2.JPG"/>
+
+Hasil prediksi
+<img src="gambar/Capture3.JPG"/>
+
+## Kesimpulan
+Berdasarkan ringkasan hasil pelatihan yang diperoleh (Loss 0.074, Akurasi 0.98 pada data pelatihan; Val Loss 0.063, Val Akurasi 0.98 pada data validasi), dapat diambil beberapa kesimpulan penting:
+
+* Kinerja Model yang Sangat Baik: Model yang dilatih menunjukkan kinerja yang sangat baik dengan tingkat akurasi yang tinggi (98%) baik pada data pelatihan maupun data validasi. Hal ini menandakan bahwa model mampu mengenali pola dan fitur dengan akurat dalam klasifikasi gambar rock, paper, dan scissors.
+* Kesesuaian Model untuk Tugas Klasifikasi Citra: Dengan akurasi yang tinggi pada dataset yang digunakan, model VGG19 terbukti cocok dan efektif untuk tugas klasifikasi citra seperti dalam kasus pengenalan gambar rock, paper, dan scissors. Hal ini mengindikasikan bahwa representasi dan fitur yang dipelajari oleh model tersebut cukup mampu untuk membedakan objek-objek tersebut dalam gambar.
+* Keandalan Model: Hasil yang konsisten antara data pelatihan dan data validasi menunjukkan bahwa model memiliki keandalan yang baik dan mampu menghasilkan prediksi yang konsisten pada dataset yang berbeda.
+* Kemungkinan Penerapan Model: Dengan kinerja yang tinggi, model ini dapat memiliki aplikasi yang luas dalam mendukung pengenalan dan klasifikasi objek pada gambar dalam berbagai konteks, baik itu untuk aplikasi permainan, pengenalan gesture, atau sistem deteksi objek pada umumnya.
+
+Hasil yang diperoleh menunjukkan bahwa model yang telah dilatih dengan menggunakan VGG19 pada dataset gambar rock, paper, dan scissors telah memberikan hasil yang sangat memuaskan dengan kinerja tinggi dan kemampuan yang baik dalam klasifikasi gambar, serta kemungkinan penerapan yang luas dalam berbagai konteks pengenalan objek pada citra.
+
+## Author
+- Fauzan Adrivano Setiono (202010370311312)
