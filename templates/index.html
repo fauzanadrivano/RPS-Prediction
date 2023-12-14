@@ -1,0 +1,157 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Prediction</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('../static/bg.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ededed;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+
+        .sec-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .login100-form {
+            padding-bottom: 20px;
+        }
+
+        .input100 {
+            width: calc(100% - 22px);
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+            transition: border-color 0.3s;
+        }
+
+        .input100:focus {
+            border-color: #6a7ce8;
+        }
+
+        .input100::placeholder {
+            color: #999;
+        }
+
+        .login100-form-btn {
+            background-color: #6a7ce8;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login100-form-btn:hover {
+            background-color: #556cd6;
+        }
+
+        .image-preview {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 20px;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-preview img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            display: block;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="contact-section" id="predict1">
+        <div class="container">
+            <div class="title-box centred">
+                <img src="../static/logo.png" alt="Logo" width="250" height="160"> 
+                <div class="sec-title">Rock Paper Scissors Prediction</div>
+            </div>
+
+            <div class="image-preview" id="image-preview-container" style="display: none;">
+                <img id="image-preview" src="#" alt="Preview">
+            </div>
+
+            <form class="login100-form validate-form" action="/predict" method="post" enctype="multipart/form-data">
+                <div class="wrap-input100 validate-input" data-validate="Image file is required" id="input">
+                    <input class="input100" id="image-source" name="file" type="file"
+                        alt="Input Image" accept="image/jpeg,image/jpg,image/png" required onchange="previewImage();">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+                        <i class="fa fa-file" aria-hidden="true"></i>
+                    </span>
+                </div>
+
+                <div class="container-login100-form-btn">
+                    <button class="login100-form-btn" type="submit">Predict</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        function previewImage() {
+            var fileInput = document.getElementById('image-source');
+            var imagePreviewContainer = document.getElementById('image-preview-container');
+            var imagePreview = document.getElementById('image-preview');
+
+            var file = fileInput.files[0];
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                imagePreview.src = e.target.result;
+                imagePreviewContainer.style.display = 'block';
+            }
+
+            if (file) {
+                reader.readAsDataURL(file);
+            } else {
+                imagePreview.src = '#';
+                imagePreviewContainer.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>
