@@ -75,6 +75,7 @@ Setelah hasil train dirasa cukup baik, model di simpan dalam format .h5. Setelah
 **Tata Cara Menggunakan**
 Clone repository berikut :
 - git clone https://github.com/fauzanadrivano/RPS-Prediction/tree/main
+- model https://drive.google.com/file/d/1JqPfrqNWVAK3pdgNa237SORBs_ComOuN/view?usp=drive_link
 
 1. Pastikan Python telah diinstal di lingkungan Anda.
 2. Instal semua dependensi yang diperlukan dengan menjalankan pip install -r requirements.txt.
