@@ -37,6 +37,10 @@ Salah satu alasan utama mengapa VGG-19 sering digunakan untuk prediksi citra ada
 3. Transfer Learning: Arsitektur VGG-19 sering digunakan dalam transfer learning, di mana model yang telah dilatih pada dataset besar (seperti ImageNet) dapat disesuaikan kembali (fine-tuning) untuk tugas klasifikasi citra yang lebih kecil. Ini karena representasi yang dipelajari oleh VGG-19 dianggap cukup universal dan berguna untuk berbagai tugas penglihatan komputer.
 4. Performa yang baik: Meskipun sudah beberapa tahun, VGG-19 masih dianggap sebagai salah satu arsitektur yang kuat dan andal untuk pengenalan citra. Meskipun mungkin bukan yang tercepat, model ini telah menunjukkan performa yang baik dalam berbagai tugas pengenalan citra.
 
+Dalam project ini model yang digunakan VGG-19, berdasarkan beberapa faktor diatas menjadi alasan mengapa model ini dipilih. Berikut ringkasan dari model VGG-19 yang sudah disesuaikan dengan case :
+
+<img src="gambar/download (2).png"/>
+
 ## Fitur
 
 - [x] Rekomendasi Kesehatan
