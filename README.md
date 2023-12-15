@@ -63,6 +63,10 @@ Ringkasan hasil training yang dihasilkan adalah sebagai berikut:
 * Loss (Kehilangan) pada data validasi: 0.063
 * Akurasi pada data validasi: 0.98 atau 98%
 
+Hasil prediksi dari model yang sudah di train :
+
+<img src="gambar/Capture6.JPG"/>
+
 Hasil ini menunjukkan bahwa model yang telah dilatih memiliki kinerja yang sangat baik:
 * Loss yang rendah pada data pelatihan (0.074) menunjukkan bahwa model hampir tidak memiliki kesalahan yang signifikan dalam mempelajari data pelatihan.
 * Akurasi tinggi pada data pelatihan (0.98 atau 98%) menunjukkan bahwa model dapat dengan tepat mengklasifikasikan sebagian besar sampel pada data pelatihan.
